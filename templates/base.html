@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Greg Plechaty - {{ title }}</title>
+    <meta name="my site" content="portfolio site">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rosario&display=swap" rel="stylesheet"> 
+    
+</head>
+<body class="colorful">
+
+<div class="container">
+  <!-- Navigation -->
+  <nav class="flex">
+    <div class="nav">
+      {% if title == 'Portfolio' %}
+            <p class="nav__link"><a href="./home.html">Home</a></p>
+        {% else %}
+            <p class="nav__link"><a href="./portfolio.html">Portfolio</a></p>
+        {% endif %}
+        <p class="nav__link"><a href="https://github.com/gregplechaty" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p class="nav__link"><a href="https://www.linkedin.com/in/gplechaty/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </nav>
+
+
+  {{ content }}
+
+
+</div>
+
+
+
+
+
+         
+
+  <!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Greg Plechaty, {{ get_year }}</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+</body>
+</html>
+

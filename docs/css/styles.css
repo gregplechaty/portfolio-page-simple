@@ -1,0 +1,86 @@
+/*css styles sheet */
+/*proposed color scheme
+34626c - darker blue
+374045 - darkest blue
+e27802 - burnt orange
+58391c - brown
+2c061f - purple
+*/
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    background-color: greenyellow;
+    margin: 5% 10%;
+    padding: .4rem;
+}
+
+.nav__link {
+    margin: .5rem;
+}
+
+.homeBox {
+    width: 40%;
+    background-color: hotpink;
+    margin: 3%;
+    padding: .4rem;
+}
+
+
+body {
+    font-family: 'Rosario', sans-serif;
+    padding-top: 56px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben'; 
+}
+
+p {
+    text-align: left;
+}
+
+.colorful {
+    background: rgb(58,144,163);
+    background: linear-gradient(90deg, rgba(58,144,163,1) 0%, rgba(55,64,69,1) 59%);
+}
+
+/*|| Projects */
+
+.projects-jumbotron {
+    background: url(../images/projects.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.projects-jumbotron-text {
+    color:white;
+    padding-top: 20px;
+}
+
+
+
+
+/* || index */
+
+.index-jumbotron {
+    background-color: #374045;
+}
+
+
+
+    /* Background image */
+.background-image {
+    background: url("../images/projects.png") no-repeat scroll 50% 50%;
+}
