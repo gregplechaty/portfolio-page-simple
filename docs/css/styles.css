@@ -11,7 +11,16 @@ e27802 - burnt orange
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.flex--break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.flex__header {
+    text-align: center;
 }
 
 .nav {
@@ -19,28 +28,22 @@ e27802 - burnt orange
     justify-content: flex-end;
     width: 80%;
     color: white;
-    
+    font-size: 1.2rem;
     margin: 5% 10%;
     padding: .4rem;
 }
 
 
 
-
-
-
-
-
-
-
-
-
 .homeBox {
-    width: 40%;
-    background-color: hotpink;
-    margin: 3%;
-    padding: .4rem;
+    width: 25rem;
+    background-color: rgba(20, 135, 126, 0.5);
+    margin: 5%;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    font-size: 1.3rem;
 }
+
 
 
 
@@ -48,9 +51,7 @@ e27802 - burnt orange
 
 /* portfolio hoveer https://www.littlesnippets.net/snip1198 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 .snip1198 {
-font-family: 'Raleway', Arial, sans-serif;
 text-align: center;
 font-weight: 500;
 letter-spacing: 1px;
@@ -113,21 +114,15 @@ right: 0;
 
 body {
     font-family: 'Rosario', sans-serif;
-    padding-top: 56px;
 
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Corben'; 
 }
 
 p {
-    text-align: left;
+    text-align: center;
 }
 
 .colorful {
-    background: rgb(58,144,163);
-    background: linear-gradient(90deg, rgba(58,144,163,1) 0%, rgba(55,64,69,1) 59%);
+    background: linear-gradient(90deg, rgb(116, 153, 162) 0%, rgb(55, 64, 69) 59%);
 }
 
 /*|| Projects */
@@ -140,10 +135,39 @@ p {
     background-size: cover;
 }
 
-.projects-jumbotron-text {
-    color:white;
-    padding-top: 20px;
+
+
+.home__button {
+    background-color: rgba(65, 66, 65, 0.801);
+    color: rgba(20, 197, 177, .7);
+    border: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    border: .3rem solid;
+    transition: background-color .15s,
+                color .15s;
+}
+
+.home__button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(20, 130, 177, .7);
 }
 
 
+@media only screen and (max-width: 600px) {
+    .homeBox {
+      width: 80%
+    }
+    .nav {
 
+        width: 90%;
+        padding: 5%;
+    }
+    .snip1198 a {
+        padding: 0px 0.2rem;
+    }
+  }

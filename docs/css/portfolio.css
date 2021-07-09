@@ -5,7 +5,10 @@
   justify-content: center;
 }
 
-
+.flexPortfolio__header {
+  width: 100%;
+  text-align: center;
+}
 
 
 .flexPortfolio__box {
