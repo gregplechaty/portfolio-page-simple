@@ -1,17 +1,7 @@
-/*css styles sheet */
-/*proposed color scheme
-34626c - darker blue
-374045 - darkest blue
-e27802 - burnt orange
-58391c - brown
-2c061f - purple
-*/
-
-
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .flex--break {
@@ -37,7 +27,7 @@ e27802 - burnt orange
 
 .homeBox {
     width: 25rem;
-    background-color: rgba(20, 135, 126, 0.5);
+    background-color: hsl(217.8, 14.9%, 35.5%);
     margin: 5%;
     border-radius: 1rem;
     padding: 1.4rem;
@@ -86,8 +76,8 @@ left: 15%;
 right: 15%;
 top: 0;
 bottom: 0;
-border-left: 3px solid #27ae60;
-border-right: 3px solid #27ae60;
+border-left: 3px solid #eea700;
+border-right: 3px solid #eea700;
 }
 .snip1198 a:hover,
 .snip1198 .current a {
@@ -140,7 +130,7 @@ p {
 
 .home__button {
     background-color: rgba(65, 66, 65, 0.801);
-    color: rgba(20, 197, 177, .7);
+    color: #eea700;
     border: 0;
     padding: 1rem;
     font-size: 2rem;
@@ -149,19 +139,23 @@ p {
     margin-left: auto;  
     margin-right: auto;
     border: .3rem solid;
-    transition: background-color .15s,
-                color .15s;
+    transition: background-color .2s,
+                color .2s;
 }
 
 .home__button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgba(20, 130, 177, .7);
+    background-color: #eea700;
+    color: rgba(65, 66, 65, 0.801);
+    
 }
 
 
 @media only screen and (max-width: 600px) {
     .homeBox {
-      width: 80%
+      width: 80%;
+    }
+    .flex {
+        justify-content: space-between;
     }
     .nav {
 
