@@ -82,7 +82,7 @@ border-right: 3px solid #eea700;
 }
 .snip1198 a:hover,
 .snip1198 .current a {
-color: #ffffff;
+color: #1bacf0;
 }
 .snip1198 a:hover:before,
 .snip1198 .current a:before {
@@ -114,7 +114,7 @@ p {
 }
 
 .colorful {
-    background: linear-gradient(90deg, rgb(116, 153, 162) 0%, rgb(55, 64, 69) 59%);
+    background: linear-gradient(90deg, rgb(132, 132, 132) 0%, rgb(55, 64, 69) 59%);
 }
 
 /*|| Projects */
