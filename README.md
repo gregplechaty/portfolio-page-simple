@@ -8,5 +8,5 @@ After cloning locally:
 - Make sure commands are run in shell
 
 ### commands (in shell):
-- python build: regenerate static site with any updates
-- python new (unused with this implementation): create new html page
+- python manage.py build: regenerate static site with any updates
+- python manage.py new (unused with this implementation): create new html page
